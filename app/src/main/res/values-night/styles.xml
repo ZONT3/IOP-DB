@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="Widget.Theme.IOPDB.MyView" parent="">
+        <item name="android:background">@color/gray_600</item>
+        <item name="emptyColor">@color/light_blue_600</item>
+    </style>
+</resources>

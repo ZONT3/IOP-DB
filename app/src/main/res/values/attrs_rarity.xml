@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="RarityView">
+        <attr name="rarityValue" format="integer" />
+        <attr name="starDrawable" format="color|reference" />
+        <attr name="starHeightDefault" format="dimension" />
+        <attr name="starMargin" format="dimension" />
+    </declare-styleable>
+</resources>

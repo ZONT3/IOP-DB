@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="?attr/colorSurface"
+        android:id="@+id/tdoll_root">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@drawable/thumb_placeholder"
+                android:id="@+id/tdoll_thumb"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tdoll_rarity"
+                android:transitionName="lib_item_thumb"
+                android:layout_marginBottom="8dp" />
+
+        <ru.zont.iopdb.RarityView
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/tdoll_rarity"
+                app:layout_constraintBottom_toTopOf="@+id/tdoll_name" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tdoll_name"
+                tools:text="Ebator Pizdauskas"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tdoll_type"
+                tools:text="SMG"
+                android:textColor="#80FFFFFF"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                app:layout_constraintTop_toTopOf="@+id/tdoll_thumb"
+                android:layout_marginTop="2dp"
+                app:layout_constraintStart_toStartOf="@+id/tdoll_thumb"
+                android:layout_marginStart="4dp"
+                android:textAllCaps="true" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

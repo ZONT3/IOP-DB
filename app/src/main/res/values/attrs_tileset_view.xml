@@ -1,0 +1,10 @@
+<resources>
+    <declare-styleable name="TilesetView">
+        <attr name="preferredTileSize" format="dimension" />
+        <attr name="verticalGapsSize" format="dimension" />
+        <attr name="horizontalGapsSize" format="dimension" />
+        <attr name="emptyColor" format="color" />
+        <attr name="effectColor" format="color" />
+        <attr name="selfColor" format="color" />
+    </declare-styleable>
+</resources>

@@ -92,4 +92,5 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="info_error_header">Error fetching info :/</string>
+    <string name="lib_search">Search</string>
 </resources>
